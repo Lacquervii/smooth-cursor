@@ -1,6 +1,6 @@
-# smooth-cursor
+# dsh-smooth-cursor
 
-A smooth, comet-mode animated caret for the [DSH](https://github.com/deepseek-ai/deepseek-harness) chat composer textarea — ported from the Obsidian Animated Cursor plugin. Replaces the native text caret with a glowing comet that glides across the input as you type, with a configurable trail, accent color, and thickness.
+A smooth, comet-mode animated caret for the [DSH](https://github.com/deepseek-ai/deepseek-harness) chat composer textarea — a standalone installable DSH plugin. Replaces the native text caret with a glowing comet that glides across the input as you type, with a configurable trail, accent color, and thickness.
 
 ![category](https://img.shields.io/badge/category-UI_Enhancement-orange)
 
@@ -17,13 +17,13 @@ A smooth, comet-mode animated caret for the [DSH](https://github.com/deepseek-ai
 ### As a DSH plugin (recommended)
 
 ```bash
-dsh plugin add github:Lacquervii/smooth-cursor
+dsh plugin add dsh-smooth-cursor
 ```
 
-Or with an explicit git URL:
+Or from GitHub:
 
 ```bash
-dsh plugin add git+https://github.com/Lacquervii/smooth-cursor.git
+dsh plugin add github:Lacquervii/smooth-cursor
 ```
 
 Then restart `dsh web` and find the **Input caret** row under **Settings → General**.

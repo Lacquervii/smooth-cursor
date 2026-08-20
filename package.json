@@ -1,5 +1,5 @@
 {
-  "name": "smooth-cursor",
+  "name": "dsh-smooth-cursor",
   "description": "Smooth comet-mode animated caret for the DSH chat composer — a standalone installable DSH plugin (ported from the Obsidian Animated Cursor plugin)",
   "version": "0.1.0",
   "license": "MIT",
