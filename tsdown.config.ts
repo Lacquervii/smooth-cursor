@@ -38,7 +38,7 @@ const VENDORED_LIBRARY = /^@deepseek-ai\/(cosmokit|schemastery)(\/|$)/
 /** Generated descriptor/codec contribution with no shared runtime identity. */
 const GENERATED_REMOTE = /^@deepseek-ai\/dsh-[a-z0-9]+(?:-[a-z0-9]+)*\/remote$/
 
-const PACKAGE_NAME = 'smooth-cursor'
+const PACKAGE_NAME = 'dsh-smooth-cursor'
 
 const client = {
   name: `${PACKAGE_NAME}/client`,
