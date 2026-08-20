@@ -17,13 +17,13 @@ A smooth, comet-mode animated caret for the [DSH](https://github.com/deepseek-ai
 ### As a DSH plugin (recommended)
 
 ```bash
-dsh plugin add github:<your-name>/smooth-cursor
+dsh plugin add github:Lacquervii/smooth-cursor
 ```
 
 Or with an explicit git URL:
 
 ```bash
-dsh plugin add git+https://github.com/<your-name>/smooth-cursor.git
+dsh plugin add git+https://github.com/Lacquervii/smooth-cursor.git
 ```
 
 Then restart `dsh web` and find the **Input caret** row under **Settings → General**.
@@ -33,7 +33,7 @@ Then restart `dsh web` and find the **Input caret** row under **Settings → Gen
 Clone this repo and add it as a plugin bundle:
 
 ```bash
-git clone https://github.com/<your-name>/smooth-cursor.git
+git clone https://github.com/Lacquervii/smooth-cursor.git
 cd smooth-cursor
 pnpm install --ignore-scripts
 pnpm build
