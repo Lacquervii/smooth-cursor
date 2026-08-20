@@ -1,16 +1,16 @@
 /**
- * Package-owned invariant companion for `smooth-cursor`.
- * @module smooth-cursor/invariant
+ * Package-owned invariant companion for `dsh-smooth-cursor`.
+ * @module dsh-smooth-cursor/invariant
  */
 
 /* jscpd:ignore-start */
 import type { Context } from '@deepseek-ai/cordis'
 import type { InvariantInstaller } from '@deepseek-ai/dsh-invariants'
 
-const PACKAGE_NAME = 'smooth-cursor'
+const PACKAGE_NAME = 'dsh-smooth-cursor'
 
 /** Cordis companion plugin name. */
-export const name = 'smooth-cursor-invariant'
+export const name = 'dsh-smooth-cursor-invariant'
 /** Service required before the companion can reserve package ownership. */
 export const inject = ['invariants']
 
