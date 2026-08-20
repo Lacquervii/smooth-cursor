@@ -44,7 +44,7 @@ Then register it in your profile's `cordis.patch.yml`:
 ```yaml
 - insert:
     - id: smooth-cursor
-      name: smooth-cursor
+      name: dsh-smooth-cursor
 ```
 
 ## Usage
