@@ -1,36 +1,38 @@
 # dsh-smooth-cursor
 
-A smooth, comet-mode animated caret for the [DSH](https://github.com/deepseek-ai/deepseek-harness) chat composer textarea — a standalone installable DSH plugin. Replaces the native text caret with a glowing comet that glides across the input as you type, with a configurable trail, accent color, and thickness.
+**中文 | [English](README.en.md)**
+
+一个为 [DSH](https://github.com/deepseek-ai/deepseek-harness)（DeepSeek Harness）Web 聊天输入框打造的**彗星光标**插件——把原生闪烁光标替换成一枚会随输入平滑滑动的发光彗星，支持自定义拖尾、强调色和粗细。这是一个独立、可安装的 DSH 插件。
 
 ![category](https://img.shields.io/badge/category-UI_Enhancement-orange)
 
-## Features
+## 特性
 
-- **Breathing caret** — a smooth eased caret that glides to the text position instead of blinking.
-- **Comet trail** — a tapered, fading trail follows the caret while you move it.
-- **Configurable** — enable/disable, trail on/off, accent color (preset swatches or custom picker), thickness (thin / medium / thick).
-- **IME-aware** — measurement respects composition so Chinese/Japanese input stays accurate.
-- **Browser-local persistence** — settings are stored in `localStorage`; no host restart or round-trip needed.
+- **呼吸光标** — 平滑缓动，输入时滑向文字位置，而非闪烁。
+- **彗星拖尾** — 移动光标时带有渐细渐隐的拖尾。
+- **可配置** — 开关特效、开关拖尾、强调色（预设色板或自定义取色）、粗细（细 / 中 / 粗）。
+- **适配 IME** — 测量尊重输入法组合状态，中文、日文输入依然准确。
+- **浏览器本地持久化** — 设置存于 `localStorage`，无需重启宿主或来回请求。
 
-## Install
+## 安装
 
-### As a DSH plugin (recommended)
+### 作为 DSH 插件安装（推荐）
 
 ```bash
 dsh plugin add dsh-smooth-cursor
 ```
 
-Or from GitHub:
+或通过 GitHub：
 
 ```bash
 dsh plugin add github:Lacquervii/smooth-cursor
 ```
 
-Then restart `dsh web` and find the **Input caret** row under **Settings → General**.
+然后重启 `dsh web`，在 **设置 → 通用 → 输入光标** 中找到设置项。
 
-### Manual (local development)
+### 手动安装（本地开发）
 
-Clone this repo and add it as a plugin bundle:
+克隆本仓库并作为插件 bundle 添加：
 
 ```bash
 git clone https://github.com/Lacquervii/smooth-cursor.git
@@ -39,7 +41,7 @@ pnpm install --ignore-scripts
 pnpm build
 ```
 
-Then register it in your profile's `cordis.patch.yml`:
+然后在你的 profile 的 `cordis.patch.yml` 中注册：
 
 ```yaml
 - insert:
@@ -47,24 +49,24 @@ Then register it in your profile's `cordis.patch.yml`:
       name: dsh-smooth-cursor
 ```
 
-## Usage
+## 使用
 
-The effect activates whenever the composer textarea has focus. Open **Settings → General → Input caret** to:
+当输入框获得焦点时特效即生效。打开 **设置 → 通用 → 输入光标** 可以：
 
-- Toggle the whole effect or just the comet trail.
-- Pick an accent color from the swatches, or use the custom color picker.
-- Choose the caret thickness.
+- 开关整个特效，或仅开关彗星拖尾。
+- 从色板选择强调色，或使用自定义取色器。
+- 选择光标的粗细。
 
-## Development
+## 开发
 
 ```bash
 pnpm install --ignore-scripts
-pnpm build     # tsc types + tsdown bundles (node half + client half)
-pnpm watch     # incremental rebuild
+pnpm build     # tsc 类型 + tsdown 打包（node 端 + 客户端）
+pnpm watch     # 增量重建
 ```
 
-`lib/` is committed so the plugin works straight from a git install even when a package manager blocks the `prepare` build step.
+`lib/` 已提交到仓库，即使包管理器阻止了 `prepare` 构建步骤，也能从 git 安装后直接运行。
 
-## License
+## 许可证
 
 MIT
