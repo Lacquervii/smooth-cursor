@@ -14,18 +14,26 @@
 - **适配 IME** — 测量尊重输入法组合状态，中文、日文输入依然准确。
 - **浏览器本地持久化** — 设置存于 `localStorage`，无需重启宿主或来回请求。
 
+## 版本要求
+
+本插件依赖官方 `@deepseek-ai/dsh-client-ui-renderer` 包，该包从 **DSH `0.1.0-rc.8` 起**才提供。请确保你的 DSH 版本不低于 `0.1.0-rc.8`；早期版本（如 `0.1.0-rc.7`）不包含此包，插件将无法加载。
+
+```bash
+dsh --version   # 确认版本号 >= 0.1.0-rc.8
+```
+
 ## 安装
 
 ### 作为 DSH 插件安装（推荐）
 
 ```bash
-dsh plugin add dsh-smooth-cursor
+dsh plugin --profile web add dsh-smooth-cursor
 ```
 
 或通过 GitHub：
 
 ```bash
-dsh plugin add github:Lacquervii/smooth-cursor
+dsh plugin --profile web add github:Lacquervii/smooth-cursor
 ```
 
 然后重启 `dsh web`，在 **设置 → 通用 → 输入光标** 中找到设置项。

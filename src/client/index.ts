@@ -6,19 +6,19 @@
  */
 import type {} from '@deepseek-ai/dsh-client-ui-settings/client'
 import type {} from '@deepseek-ai/dsh-client-locale/client'
-import { bindSnapshotSelector } from '@deepseek-ai/dsh-client-web-react'
+import { bindSnapshotSelector } from '@deepseek-ai/dsh-client-ui-renderer'
 import type { CursorRowInjected } from './CursorRow.tsx'
 import { CursorRow } from './CursorRow.tsx'
 import { CursorController } from './cursor-controller.ts'
 import { en, zh } from './locales.ts'
 
 /** Locale namespace owned by this feature's settings row. */
-export const SETTINGS_NS = 'settings.cursor'
+export const SETTINGS_NS = 'settings.cursor-effect'
 
 declare module '@deepseek-ai/dsh-client-ui-slots' {
   interface LocaleNamespaceMap {
     /** The Input caret settings row's copy. */
-    'settings.cursor': import('./locales.ts').CursorKey
+    'settings.cursor-effect': import('./locales.ts').CursorKey
   }
 }
 
@@ -34,7 +34,7 @@ export function apply(ctx: import('@deepseek-ai/cordis').Context): void {
 
   ctx.slots.inject('settings.general.item', () => ctx.slots.register({
     name: 'settings.general.item',
-    id: 'cursor',
+    id: 'cursor-effect',
     order: 30,
     locale: SETTINGS_NS,
     inject: (): CursorRowInjected => ({

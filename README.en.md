@@ -14,18 +14,26 @@ A smooth, comet-mode animated caret for the [DSH](https://github.com/deepseek-ai
 - **IME-aware** — measurement respects composition so Chinese/Japanese input stays accurate.
 - **Browser-local persistence** — settings are stored in `localStorage`; no host restart or round-trip needed.
 
+## Version requirements
+
+This plugin depends on the official `@deepseek-ai/dsh-client-ui-renderer` package, which is only shipped starting with **DSH `0.1.0-rc.8`**. Make sure your DSH is at or above `0.1.0-rc.8`; earlier versions (e.g. `0.1.0-rc.7`) do not include this package and the plugin will fail to load.
+
+```bash
+dsh --version   # confirm version >= 0.1.0-rc.8
+```
+
 ## Install
 
 ### As a DSH plugin (recommended)
 
 ```bash
-dsh plugin add dsh-smooth-cursor
+dsh plugin --profile web add dsh-smooth-cursor
 ```
 
 Or from GitHub:
 
 ```bash
-dsh plugin add github:Lacquervii/smooth-cursor
+dsh plugin --profile web add github:Lacquervii/smooth-cursor
 ```
 
 Then restart `dsh web` and find the **Input caret** row under **Settings → General**.

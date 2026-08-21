@@ -27,7 +27,7 @@ export interface CursorRowInjected {
 /** Full component props. */
 export type CursorRowProps =
   PropsRuntime<'settings.general.item'>
-  & PropsLocale<'settings.cursor'>
+  & PropsLocale<'settings.cursor-effect'>
   & InjectFace<CursorRowInjected>
 
 interface SwitchProps {

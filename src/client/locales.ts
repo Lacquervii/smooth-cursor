@@ -1,4 +1,4 @@
-/** `settings.cursor` namespace dictionaries (the Input caret row's copy). */
+/** `settings.cursor-effect` namespace dictionaries (the Input caret row's copy). */
 
 /** Simplified Chinese dictionary (the key-set source of truth). */
 export const zh = {
@@ -15,7 +15,7 @@ export const zh = {
   'cursor.size.large': '粗',
 } satisfies Record<string, string>
 
-/** The settings.cursor namespace key union. */
+/** The settings.cursor-effect namespace key union. */
 export type CursorKey = keyof typeof zh
 
 /** English dictionary, checked complete against the zh key set. */
