@@ -6,6 +6,10 @@ A smooth, comet-mode animated caret for the [DSH](https://github.com/deepseek-ai
 
 ![category](https://img.shields.io/badge/category-UI_Enhancement-orange)
 
+## Preview
+
+<video src="docs/preview.mp4" controls width="720" muted></video>
+
 ## Features
 
 - **Breathing caret** — a smooth eased caret that glides to the text position instead of blinking.

@@ -6,6 +6,10 @@
 
 ![category](https://img.shields.io/badge/category-UI_Enhancement-orange)
 
+## 预览
+
+<video src="docs/preview.mp4" controls width="720" muted></video>
+
 ## 特性
 
 - **呼吸光标** — 平滑缓动，输入时滑向文字位置，而非闪烁。

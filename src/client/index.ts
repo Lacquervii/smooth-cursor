@@ -6,7 +6,7 @@
  */
 import type {} from '@deepseek-ai/dsh-client-ui-settings/client'
 import type {} from '@deepseek-ai/dsh-client-locale/client'
-import { bindSnapshotSelector } from '@deepseek-ai/dsh-client-ui-renderer'
+import { bindSnapshotSelector } from './make-cursor-hook.ts'
 import type { CursorRowInjected } from './CursorRow.tsx'
 import { CursorRow } from './CursorRow.tsx'
 import { CursorController } from './cursor-controller.ts'
