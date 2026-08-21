@@ -79,6 +79,10 @@ pnpm watch     # 增量重建
 
 `lib/` 已提交到仓库，即使包管理器阻止了 `prepare` 构建步骤，也能从 git 安装后直接运行。
 
+## 致谢
+
+本插件的**光标平滑效果**受 [VSCode 的 smooth cursor](https://github.com/microsoft/vscode) 概念启发，并参考了 Obsidian 社区的 [animated-cursor](https://github.com/kotaindah55/animated-cursor) 插件（原作者 Copyright (c) 2025 Kotaindah55 (Sheva Ihza)，基于 [MIT License](https://github.com/kotaindah55/animated-cursor/blob/master/LICENSE)）。本项目的渲染与集成是为 DSH Web 独立重写的实现，但效果灵感来源于上述项目，特此致谢。
+
 ## 许可证
 
 MIT

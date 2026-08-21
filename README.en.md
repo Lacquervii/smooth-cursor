@@ -79,6 +79,10 @@ pnpm watch     # incremental rebuild
 
 `lib/` is committed so the plugin works straight from a git install even when a package manager blocks the `prepare` build step.
 
+## Acknowledgements
+
+The **smooth caret effect** of this plugin is inspired by the [VSCode smooth cursor](https://github.com/microsoft/vscode) concept and references the Obsidian community [animated-cursor](https://github.com/kotaindah55/animated-cursor) plugin (Copyright (c) 2025 Kotaindah55 (Sheva Ihza), released under the [MIT License](https://github.com/kotaindah55/animated-cursor/blob/master/LICENSE)). The rendering and integration in this project are independently rewritten for DSH Web, but the effect is inspired by the projects above — many thanks to their authors.
+
 ## License
 
 MIT
