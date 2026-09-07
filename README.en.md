@@ -7,6 +7,10 @@ A smooth, comet-mode animated caret for the [DSH](https://github.com/deepseek-ai
 ![category](https://img.shields.io/badge/category-UI_Enhancement-orange)
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)
 
+<p align="center">
+  <img src="docs/social-preview.png" alt="dsh-smooth-cursor preview" width="800">
+</p>
+
 ## Preview
 
 <video src="docs/preview.mp4" controls width="720" muted></video>
