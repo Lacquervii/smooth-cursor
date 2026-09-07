@@ -5,6 +5,7 @@
 A smooth, comet-mode animated caret for the [DSH](https://github.com/deepseek-ai/deepseek-harness) chat composer textarea — a standalone installable DSH plugin. Replaces the native text caret with a glowing comet that glides across the input as you type, with a configurable trail, accent color, and thickness.
 
 ![category](https://img.shields.io/badge/category-UI_Enhancement-orange)
+[![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)
 
 ## Preview
 
@@ -17,14 +18,6 @@ A smooth, comet-mode animated caret for the [DSH](https://github.com/deepseek-ai
 - **Configurable** — enable/disable, trail on/off, accent color (preset swatches or custom picker), thickness (thin / medium / thick).
 - **IME-aware** — measurement respects composition so Chinese/Japanese input stays accurate.
 - **Browser-local persistence** — settings are stored in `localStorage`; no host restart or round-trip needed.
-
-## Version requirements
-
-This plugin depends on the official `@deepseek-ai/dsh-client-ui-renderer` package, which is only shipped starting with **DSH `0.1.0-rc.8`**. Make sure your DSH is at or above `0.1.0-rc.8`; earlier versions (e.g. `0.1.0-rc.7`) do not include this package and the plugin will fail to load.
-
-```bash
-dsh --version   # confirm version >= 0.1.0-rc.8
-```
 
 ## Install
 
