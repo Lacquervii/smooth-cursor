@@ -4,9 +4,7 @@
  * persistence both share. One instance per plugin apply, disposed with the
  * fiber so an HMR reload rebuilds from the stored preference.
  */
-import {
-  createSnapshotStore, type SnapshotStore,
-} from '@deepseek-ai/dsh-client-runtime/client'
+import { createSnapshotStore, type SnapshotStore } from './snapshot-store.ts'
 import { CursorPersistence, type CursorSettings, type CursorSize } from './cursor-settings.ts'
 import { CursorEngine } from './cursor-engine.ts'
 
